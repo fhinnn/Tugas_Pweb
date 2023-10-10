@@ -1,313 +1,85 @@
-/*font Spectral dan Bebas Neue*/
-@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&family=Spectral:wght@300&display=swap');
-
-:root {
-  --primary-color: white;
-  --secondary-color: orange;
-  --third-color: gray;
-  --fourth-color: black;
-}
-.dark-mode {
-  --primary-color: black;
-  --secondary-color: orange;
-  --third-color: white;
-  --fourth-color: white;
-}
-header {
-  background-color: var(--fourth-color);
-  position: fixed;
-  top: 0;
+body {
+  box-sizing: border-box;
   width: 100%;
-  overflow: hidden;
-  padding: 2vh 1vw 1vh 1vw;
-  font-weight: bolder;
-  font-size: 100%;
-  font-family: 'Spectral', serif;
-}
-header > a {
-  color: var(--primary-color);
-  float: left;
-  display: block;
-  text-decoration: none;
-  position: block;
-  padding: 2vh 1vw 1vh 1vw;
-  border-radius: 5px;
-  font-weight: 800px;
-}
-.icon {
-  display: none;
-}
-.mode {
-  width: 4vw;
-  height: fit-content;
-  float: right;
-  padding-right: 5%;
-  cursor: pointer;
-}
-
-button {
-  float: right;
-  padding: 1vh 1vw 1vh 1vw;
-  margin-right: 5vw;
-  font-size: medium;
-  font-family: 'Spectral', serif;
-}
-
-header > a:hover {
-  color: var(--fourth-color);
-  background: var(--primary-color);
-}
-
-#logo_freebook {
-  width: 4vw;
-  height: fit-content;
-  float: left;
-  padding-right: 2vw;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
+  text-align: center;
+  font-size: 2em;
   margin: 0;
-}
-
-.imghome {
-  float: left;
-  width: 4vw;
-  height: 8vh;
-  padding-top: 0vh;
-  padding-right: 1vw;
-  padding-left: 1vw;
-}
-body {
-  margin: 0px;
-  padding: 0px;
-}
-#Home {
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: center;
-  padding-left: 2%;
-}
-#freebooklogo {
-  width: 50%;
-  height: 50%;
-  background: var(--third-color);
-}
-.description {
-  color: var(--fourth-color);
-  text-align: justify;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 250%;
-  font-weight: bolder;
-  padding-right: 5vw;
-  padding-left: 5vw;
-  padding-top: 5vh;
-}
-#trending {
-  padding: 15vh 0 15vh 0;
-  display: block;
-  background: var(--primary-color);
-}
-.most {
-  display: flex;
-  justify-content: center;
-  padding-top: 5vh;
-}
-.card {
-  background-color: var(--third-color);
-  border-radius: 5px;
-  font-family: 'Spectral', serif;
-  font-weight: bolder;
-  font-size: medium;
-  text-align: center;
-  color: var(--primary-color);
-}
-.Book {
-  width: 10vw;
-  height: fit-content;
-  padding: 3vh 2vw 2vh 2vw;
-}
-
-.card:hover {
-  color: var(--secondary-color);
-  box-shadow: 6px 2px 2px 2px #666666;
-}
-
-#Testimoni {
-  background-color: var(--primary-color);
-}
-.box-model1 {
-  color: var(--secondary-color);
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 50px;
-}
-.section-testi {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  display: flex;
-  padding-bottom: 100px;
-}
-.box-testi {
-  padding-top: 5vh;
-  border-radius: 10px;
-  background-color: var(--third-color);
-  color: var(--primary-color);
-  font-size: 20px;
-  margin: 10px;
-}
-.quote {
-  padding: 2vh 2vw 2vh 2vw;
-}
-.nama {
-  font-weight: 700;
-  font-style: italic;
-  text-align: right;
-  padding: 2vh 2vw 2vh 2vw;
-}
-#contact {
-  background-color: var(--primary-color);
-}
-.biodata {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 40px;
-  font-weight: 800;
-  text-align: center;
-}
-.kolomprofil {
-  padding-top: 10vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  display: flex;
-  gap: 5vw;
-  justify-content: center;
-}
-.profil {
-  width: 15vw;
-  height: fit-content;
-  border-radius: 10px;
-  box-shadow: 6px 2px 2px 2px #666666;
-  border: 4px solid var(--fourth-color);
-}
-.kata {
-  font-family: 'Spectral', serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--fourth-color);
-}
-.icon {
-  display: flex;
-  gap: 5vh;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.iconx:hover {
-  background: var(--third-color);
-}
-.iconx {
-  width: 5vw;
-  height: fit-content;
-  background: var(--secondary-color);
-}
-footer {
-  background-color: var(--fourth-color);
-  color: var(--primary-color);
-  overflow: hidden;
-  font-weight: bolder;
-  font-size: medium;
-  text-align: center;
-  font-family: 'Spectral', serif;
-  font-weight: bolder;
   padding: 0;
 }
 
-footer > div > p > img {
-  width: 1vw;
-  height: fit-content;
+button {
+  height: 50px;
+  margin: 2px;
+  font-size: 1.2em;
+  border-style: none;
 }
 
-article,
-aside {
-  padding: 15vh 0 15vh 0;
+button:hover {
+  color: aliceblue;
+  background-color: #2952a3;
+  cursor: pointer;
+  border: 2px solid white;
 }
 
-@media screen and (max-width: 600px) {
-  #Home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    float: none;
-  }
-  .description {
-    font-size: 150%;
-  }
-  header {
-    display: flex;
-    gap: 5px;
-  }
-  .mode {
-    width: 7%;
-    height: fit-content;
-    float: right;
-    padding-top: 2%;
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-
-  #logo_freebook {
-    float: none;
-    padding-top: 2vh;
-    padding-right: 2vw;
-  }
-
-  .box-model {
-    width: 50%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 200%;
-  }
-
-  .most {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .section-testi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .iconx {
-    width: 100%;
-    height: fit-content;
-  }
+.calculator {
+  top: 150px;
+  margin: 0 auto;
+  max-width: 300px;
+  border: 10px solid #000000;
 }
 
-@media screen and (max-width: 1050px) {
-  #Home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    float: none;
-  }
-  #logo_freebook {
-    width: 5%;
-  }
+.calcButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  background-color: #193366;
+  padding: 10px;
+}
 
-  .most {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.calcButtons > button:nth-child(17) {
+  grid-column: 1/3;
+}
 
-  .Book {
-    padding: ;
-  }
+.operator {
+  background-color: #d6e0f5;
+}
 
-  .section-testi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.number {
+  background-color: #7094db;
+}
+
+.userInput {
+  position: relative;
+  height: 80px;
+  max-width: 100%;
+  text-align: right;
+  padding: 10px;
+  font-size: 25px;
+  /*border: 1px solid #193366;*/
+  background-color: #d6e0f5;
+}
+
+.calcButtons > button:nth-child(19) {
+  background-color: lightgreen;
+}
+
+.userEntry {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 5px;
+  right: 0;
+}
+
+.finalCalc {
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  top: 0;
+  padding: 0;
 }
