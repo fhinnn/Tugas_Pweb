@@ -1,46 +1,135 @@
-<!DOCTYPE html>
+<!-- 
+Nama  : Yusna Millaturrosyidah
+NRP   : 5025211254
+Kelas : Pemrograman Web - D -->
 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Simple_Calculator</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sandbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1);
+
+      .display-1 {
+        font-family: 'DM Serif Display';
+        font-weight: 400 !important;
+        word-spacing: normal !important;
+        letter-spacing: normal !important;
+        font-size: 2.6rem;
+        margin-bottom: 5px;
+      }
+
+      .custom-font {
+        font-family: Arial, sans-serif;
+        font-weight: 400 !important;
+        word-spacing: normal !important;
+        letter-spacing: normal !important;
+        font-size: 1.6rem;
+        margin-top: 5px;
+      }
+
+      .icon {
+        font-size: 25px;
+      }
+
+      figure img {
+        width: 500px;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Simple Calculator</h1>
-    <div class="calculator">
-      <div class="userInput">
-        <p class="userEntry"></p>
-        <p class="finalCalc"></p>
+    <header class="wrapper" style="background-color: #3f78e0">
+      <div class="text-white fw-bold fs-15 mb-2">
+        <div class="container py-2 d-md-flex flex-md-row">
+          <div class="d-flex flex-row align-items-center">
+            <div class="icon text-white fs-22 mt-1 me-2"><iconify-icon icon="uil:location-pin-alt"></iconify-icon></div>
+            <address class="mb-0">Moonshine St. 14/05 Light City</address>
+          </div>
+          <div class="d-flex flex-row align-items-center me-4 ms-auto">
+            <div class="icon text-white fs-22 mt-1 me-2"><iconify-icon icon="uil:phone-volume"></iconify-icon></div>
+            <p class="mb-0">00 (123) 456 78 90</p>
+          </div>
+          <div class="d-flex flex-row align-items-center">
+            <div class="icon text-white fs-22 mt-1 me-2"><iconify-icon icon="uil:message"></iconify-icon></div>
+            <p class="mb-0">sandbox@email.com</p>
+          </div>
+        </div>
       </div>
+    </header>
 
-      <div class="calcButtons">
-        <button>+/-</button>
-        <button>AC</button>
-        <button>DEL</button>
-        <button class="operator">*</button>
-
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="operator">+</button>
-
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="operator">/</button>
-
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="operator">-</button>
-
-        <button class="number">0</button>
-        <button class="decimal">.</button>
-        <button class="operator">=</button>
+    <nav class="d-flex flex-row justify-content-around align-items-center flex-wrap px-5" style="background-color: white">
+      <img class="w-25" src="./The Sandbox.svg" alt="sandbox_logo" /></img>
+      <div class="d-none d-lg-flex">
+        <div class="dropdown">
+          <button class="fs-5 font-monospace btn btn-white dropdown-toggle" type="button" id="dropdownDemosButton" data-bs-toggle="dropdown" aria-expanded="false">Demos</button>
+        </div>
+        <div class="dropdown">
+          <button class="fs-5 font-monospace btn btn-white dropdown-toggle" type="button" id="dropdownProjectsButton" data-bs-toggle="dropdown" aria-expanded="false">Projects</button>
+        </div>
+        <div class="dropdown">
+          <button class="fs-5 font-monospace btn btn-white dropdown-toggle" type="button" id="dropdownBlocksButton" data-bs-toggle="dropdown" aria-expanded="false">Blocks</button>
+        </div>
+        <div class="dropdown">
+          <button class="fs-5 font-monospace btn btn-white dropdown-toggle" type="button" id="dropdownPagesButton" data-bs-toggle="dropdown" aria-expanded="false">Pages</button>
+        </div>
+        <div class="dropdown">
+          <button class="fs-5 font-monospace btn btn-white dropdown-toggle" type="button" id="dropdownFeaturesButton" data-bs-toggle="dropdown" aria-expanded="false">Features</button>
+        </div>
+        <div class="dropdown">
+          <button class="fs-5 font-monospace btn btn-white dropdown-toggle" type="button" id="dropdownElementsButton" data-bs-toggle="dropdown" aria-expanded="false">Elements</button>
+        </div>
       </div>
-    </div>
+      <div class="dropdown px-2">
+        <button class="fs-5 font-monospace btn btn-white dropdown-toggle" type="button" id="dropdownLanguagesButton" data-bs-toggle="dropdown" aria-expanded="false">EN</button>
+      </div>
+      <button class="btn btn-white rounded-pill text-white" type="button" style="background: #3f78e0; font-size: 18px; padding: 13px">Contact</button>
+    </nav>
 
-    <script src="./app.js"></script>
+    <section class="wrapper">
+      <div class="container pt-8 pt-md-14">
+        <div class="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7 mb-md-10 mb-lg-16 align-items-center">
+          <div
+            class="col-md-8 offset-md-2 col-lg-6 offset-lg-1 position-relative order-lg-2"
+            data-cue="zoomIn"
+            data-show="true"
+            style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both"
+          >
+            <div class="shape bg-dot primary rellax w-17 h-19" data-rellax-speed="1" style="top: -1.7rem; left: -1.5rem; transform: translate3d(0px, -9px, 0px)"></div>
+            <div class="shape rounded bg-soft-primary rellax d-md-block" data-rellax-speed="0" style="bottom: -1.8rem; right: -0.8rem; width: 85%; height: 90%; transform: translate3d(0px, 0px, 0px)"></div>
+            <figure class=" rounded"><img class="shadow p-2 rounded" src="./pict1.jpg" alt="" /></figure>
+          </div>
+          <div class="col-lg-5 mt-lg-n10 text-center text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600">
+            <p class="display-1 mb-5 py-2 text-start">We bring solutions to make life easier for our customers.</p>
+            <p class="lead fs-5 text-body-secondary font-monospace mb-7 px-md-10 px-lg-0 custom-font py-2"> We have considered our solutions to support every stage of your growth.</p>
+            <div class="d-flex justify-content-center justify-content-lg-start py-4" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
+              <a href="#" class="btn btn-lg rounded-pill me-2" style="background-color: #3f78e0; color: white; font-size: 16px; padding: 10px 20px">Explore Now</a>
+              <a href="#" class="btn btn-lg rounded-pill" style="border-color: #3f78e0; color: #3f78e0; font-size: 16px; padding: 10px 20px">Free Trial</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex justify-content-around px-5 flex-wrap py-5 mb-5">
+      <div><img src="./c1.png" alt="" class="img-fluid p-2" width="100px" /></div>
+      <div><img src="./c2.png" alt="" class="img-fluid p-2" width="100px" /></div>
+      <div><img src="./c3.png" alt="" class="img-fluid p-2" width="100px" /></div>
+      <div><img src="./c4.png" alt="" class="img-fluid p-2" width="100px" /></div>
+      <div><img src="./c5.png" alt="" class="img-fluid p-2" width="100px" /></div>
+      <div><img src="./c6.png" alt="" class="img-fluid p-2" width="100px" /></div>
+    </section>
+
+    <!-- JavaScript dan Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rqzKgF8rlz5u9zI4zrE5f5bs5d6s/uUjN5x3iI5FpY6f5f5xs5d4I5j5w5g5j5g5E5i5w5" crossorigin="anonymous"></script>
   </body>
 </html>
